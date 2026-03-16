@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        a {}
+
+        ul {}
+
+        .layout-1281 {
+            width: 1281px;
+            margin: 0 auto;
+        }
+
+        .wrapper>header>nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            height: 85px;
+            align-items: center;
+            padding: 0 20px;
+            max-width: 1281px;
+            margin: 0 auto
+        }
+
+        .wrapper>header>nav>.nav-bar>img {
+            width: 61px;
+            height: auto;
+            cursor: pointer;
+        }
+
+        .wrapper>header>nav>.nav-bar {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .wrapper>header>nav>.sub-manu {
+            display: flex;
+        }
+
+        .wrapper>header>nav>.sub-manu>.team {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .wrapper>header>nav>.sub-manu>.team>.nav-team {
+            color: #fff;
+            background-color: #81e1cf;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 8px 22px;
+            border-radius: 36px;
+            height: 42px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .wrapper>header>nav>.sub-manu>.team>a {
+            border: 1px solid #dddddd;
+            color: #333;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 8px 22px;
+            border-radius: 36px;
+            height: 42px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrapper>header>nav>.sub-manu>div>.login {
+            font-weight: 600;
+            font-size: 1.125rem;
+            color: #000;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        /* Layout-main */
+        .wrapper>main {}
+
+        .wrapper>main>.content {
+            
+        }
+
+        .wrapper>main>.content>.postheader {
+            border-bottom: 3px solid #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            margin-top: 3rem;
+            position: relative;
+            padding-bottom: 35px;
+        }
+
+        .wrapper>main>.content>.postheader>img {
+            width: 36px;
+            height: 36px;
+            cursor: pointer;
+        }
+
+        .wrapper>main>.content>.postheader>.title {
+            margin-top: 40px;
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 126.5%;
+            letter-spacing: -.005em;
+            color: #000;
+        }
+
+        .wrapper>main>.content>.postheader>.userStats {
+            padding-top: 20px;
+            display: flex;
+        }
+
+        .wrapper>main>.content>.postheader>.userStats>.user {
+            display: flex;
+
+        }
+
+        .wrapper>main>.content>.postheader>.userStats>.user>img {
+            cursor: pointer;
+            display: block;
+            height: 3rem;
+            width: 3rem;
+            margin-right: 8px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .wrapper>main>.content>.postheader>.userStats>.user>div {
+            color: #333;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 700;
+            padding-top: 15px;
+            padding-right: 15px;
+
+        }
+
+        .wrapper>main>.content>.postheader>.userStats>.user>.date {
+            font-size: 18px;
+            color: #717171;
+        }
+
+        .wrapper>main>.content>.postheader>.userStats>.stats {
+            display: flex;
+            margin-left: 866px;
+            margin-top: 20px;
+            gap: 5px;
+            padding-right: 15px;
+        }
+
+        .wrapper>main>.content>.postheader>.userStats>.stats2 {
+            display: flex;
+            gap: 5px;
+            margin-top: 20px;
+        }
+
+        .wrapper>main>.content>.postheader>.userStats>.stats>img {
+            margin-top: 5px;
+            width: 20px;
+            height: 15px;
+        }
+
+        .wrapper>main>.content>.postheader>.userStats>.stats>div {
+            
+        }
+
+        .wrapper>main>.content>.postheader>.userStats>.stats2>img {
+            margin-top: 5px;
+            width: 20px;
+            height: 15px;
+        }
+
+        .wrapper>main>.content>.postheader>.userStats>.stats2>div {}
+        .wrapper>main>.content>.postcontent>h2{
+            font-size: 27px;
+        }
+        .wrapper>main>.content>.postcontent>p{
+            font-size: 18px;
+        }
+        .wrapper>main>.content>.postcontent>a{
+            font-size: 18px;
+        }
+        .wrapper>main>.content>.bottom-container{
+            display:flex;
+            gap: 16px;
+            align-items: center;
+            justify-content: flex-end;
+            margin-top: 16px;
+        }
+        .wrapper>main>.content>.bottom-container>.container1{}
+        .wrapper>main>.content>.bottom-container>.container1>img{
+            width: 20px;
+            height: 15px;
+        }
+        .wrapper>main>.content>.bottom-container>.container2{}
+        .wrapper>main>.content>.bottom-container>.container2>img{
+            width: 20px;
+            height: 18px;
+        }
+        .wrapper>main>.content>.commentinput{
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 100px;
+            margin-bottom: 50px;
+            
+        }
+        .wrapper>main>.content>.commentinput>.comment{
+            display: flex;
+            font-size: 18px;
+            margin-bottom: 15px;
+            gap: 5px;
+        }
+        .wrapper>main>.content>.commentinput>.comment>span{
+            color:#939393;
+        }
+        .wrapper>main>.content>.commentinput>.inputcomment{
+            display: flex;
+            margin-bottom: 30px;
+            gap:15px;
+        }
+        .wrapper>main>.content>.commentinput>.inputcomment>.input{
+            width: 100%;
+            border: 2px solid #e1e1e1;
+            outline: none;
+            min-height: 100px;
+            border-radius: 16px;
+            font-size: 16px;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+        .wrapper>main>.content>.commentinput>.inputcomment>img{
+            width:44px;
+            height: 44px;
+            
+        }
+        .wrapper>main>.content>.commentinput>button{
+            border-radius: 50px;
+            background-color: black;
+            color: white;
+            border: none;
+            height: 40px;
+            text-align: center;
+            width: 130px;
+            font-weight: 700;
+            font-size: 16px;
+        }
+        /* Layout-footer */
+        .wrapper>footer {}
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="top-header"></div>
+            <nav>
+                <div class="nav-bar ">
+                    <img src="file:///C:/Users/Administrator/Downloads/ALLA%20%EB%A1%9C%EA%B3%A0.svg" alt="logo">
+                    <div class="sub-title">Alla-IT</div>
+                </div>
+                <div class="sub-manu">
+                    <div class="team">
+                        <button class="nav-team">팀원 모집하기</button>
+                        <a href="javascript:void(o)">비즈니스 문의</a>
+                        <button class="login">로그인</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="content layout-1281">
+                <div class="postheader">
+                    <img src="https://holaworld.io/images/info/arrow-left.png" alt="">
+                    <div class="title">[카페모카] 커피한잔하고 코딩 해요☕️</div>
+                    <div class="userStats">
+                        <div class="user">
+                            <img src="https://hola-post-image.s3.ap-northeast-2.amazonaws.com/default.PNG" alt="">
+                            <div>뭐라도해야지</div>
+                            <div class="date">2026.03.09</div>
+                        </div>
+                        <div class="stats">
+                            <img src="https://holaworld.io/images/info/eye.png" alt="">
+                            <div>165</div>
+                        </div>
+                        <div class="stats2">
+                            <img src="https://holaworld.io/images/info/bookmark.png" alt="">
+                            <div>1</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="postcontent">
+                    <h2>💻 운영 방식</h2>
+                    <p>참여 방식: 오프라인</p>
+                    <p>장소: 카페</p>
+                    <p>일시:매주 1회</p>
+                    <p>
+                        <br>
+                    </p>
+                    <h2>💡이런 분들 환영합니다</h2>
+                    <p>- 신입생 환영</p>
+                    <p>- 하긴 해야하는데 뭘 해야할지 모르는 코린이!</p>
+                    <p>- 혼자 하면 30분 만에 핸드폰 보게 되는 의지박약 갓생러!</p>
+                    <p>- 같이 놀면서 코딩까지 해요!</p>
+                    <p>
+                        <br>
+                    </p>
+                    <h2>📩 신청 방법</h2>
+                    <p>
+                        <a href="https://forms.gle/tnLATiNyx5s5iepw6" target="_blank">
+                            https://forms.gle/tnLATiNyx5s5iepw6
+                        </a>
+                    </p>
+                </div>
+                <div class="bottom-container">
+                    <div class="container1">
+                        <img src="https://holaworld.io/images/info/eye.png" alt="">
+                        <span>503</span>
+                    </div>
+                    <div class="container2">
+                        <img src="https://holaworld.io/images/info/bookmark.png" alt="">
+                        <span>1</span>
+                    </div>
+                </div>
+                <div class="commentinput">
+                    <div class="comment">
+                        <div>댓글</div>
+                        <span>0</span>
+                    </div>
+                    <div class="inputcomment">
+                        <img src="https://hola-post-image.s3.ap-northeast-2.amazonaws.com/default.PNG" alt="">
+                        <textarea class="input" placeholder="댓글을 입력하세요."></textarea>
+                    </div>
+                    <button>댓글 등록</button>
+                </div>
+            </section>
+            <section></section>
+            <section></section>
+        </main>
+        <footer></footer>
+    </div>
+
+</html>
