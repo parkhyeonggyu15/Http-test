@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/중구맛집.js"></script>
+</head>
+<body>
+    <script>
+        //
+        // console.log("중구맛집",중구맛집);
+        //
+        const dataArray = 중구맛집.data;
+        // console.log("dataArray",dataArray);
+
+        //한식
+        const 한식맛집 = dataArray.filter((item)=>{return item.FD_CS=="한식"})
+        // console.log("한식맛집",한식맛집);
+
+        //일식(BZ_NM,MNU,GNG_CS)
+        const 일식맛집 = dataArray.filter((item)=>{return item.FD_CS=="일식"})
+                                   .map((item)=>{return {"상호명":item.BZ_NM, "메뉴":item.MNU,"주소":item.GNG_CS}})
+        console.log("일식맛집",일식맛집);
+    </script>
+</body>
+</html>
