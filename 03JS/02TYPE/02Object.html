@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--  -->
+    <hr>MACAR<hr>
+    <div>
+    <h2>속성</h2>
+    </div>
+    <div>
+        <label>owner</label> <input id="owner" readonly/>
+    </div>
+    <div>
+        <label>category</label> <input id="category" readonly/>
+    </div>
+    <div>
+        <label>fuleType</label> <input id="fuleType" readonly/>
+    </div>
+    <div>
+        <label>carSpeed</label> <input id="carSpeed" readonly/>
+    </div>
+    <div>
+        <label>fuelAmount</label> <input id="fuelAmount" readonly/>
+    </div>
+
+        <div>
+            <button onclick="myCar.Accel()">가속</button>
+            <button onclick="myCar.Break()">감속</button>
+            <button onclick="myCar.toString()">상태확인</button>
+        </div>
+    <div>
+        <label>속도<abel>
+        <div id="gauge" style="transition:2s;height:50px;width:1px;background-color: orange;"></div>
+    </div>
+    
+    <hr>
+    
+    <script>
+        // object ? 사물, 객체 {key:value}
+        // 속성 : 
+        // 기능 :
+
+        // MYCar : 
+        // 속성 : 소유자, 브랜드명,속도,연료타입,연료량...
+        // 기능 : 가속하다,감속하다,시동을 건다, 시동을 끈다...
+        const myCar =
+        {
+            // 속성
+            owner :"홍길동",
+            category : "SUV",
+            fuleType : "디젤",
+            carSpeed : 0,
+            fuelAmount : 100,
+            //기능
+            Accel : function(){
+                this.carSpeed +=10;
+                console.log("가속처리 완료  현재 속도 :", this.carSpeed)
+                document.getElementById('gauge').style.width=`{(this.carSpeed * 2}px}`;
+                document.getElementById('carSpeed').value=this.carSpeed;
+            },
+            Break : function(){
+                this.carSpeed -= 10;
+                console.log("감속처리 완료 현재 속도 :", this.carSpeed)
+                document.getElementById('gauge').style.width=`{(this.carSpeed * 2}px}`;
+                document.getElementById('carSpeed').value=this.carSpeed;
+            },
+            toString : function(){
+                console.log(this.owner,this.category,this.fuletype,this.carSpeed,this.fuelAmount);
+            }
+        };
+        console.log(myCar);
+        document.getElementById('owner').value=myCar.owner;
+        document.getElementById('category').value=myCar.category;
+        document.getElementById('fuleType').value=myCar.fuleType;
+        document.getElementById('carSpeed').value=myCar.carSpeed;
+        document.getElementById('fuelAmount').value=myCar.fuelAmount;
+
+        //
+        const tori = 
+        {
+            // 속성
+            name : "토리",
+            kind : "믹스견",
+            age : 2,
+            weight : 4.8,
+            // 기능
+            sound : function(){ console.log(`${name} 가 멍멍 짖습니다!`);},
+            toString : function(){console.log(this.name,this.kind,this.age,this.weight)}
+        }
+
+
+        // tori.toString();
+        tori["color"] = "검정";
+        console.log("!", tori);
+        tori.sound();
+    </script>
+</body>
+</html>

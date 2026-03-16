@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // ----------------------------------
+        // 배열 : 여러 자료 Type을 저장하기 위한 자료구조
+        // 배열은 순서번호(Index) 를 가지고 있고 번호를 통해서 요소값에 접근가능
+        //---------------------------------------
+         let arr=['str1',"str2",'str3',null,true,false,undefined,{name:"홍길동",age:35}];
+        // console.log(arr);
+        // console.log(arr[0]);
+        // console.log(arr[1]);
+        // console.log(arr[2]);
+        // console.log(arr[3]);
+        // console.log(arr[4]);
+        // console.log(arr[5]);
+        // console.log(arr[6]);
+        // console.log(arr[7]);
+
+        //------------------------------
+        //자바스크립트의 배열은 동적확장이 가능하다
+        //-----------------------------
+        // arr[8] = 100;
+        // // console.log(arr);
+        // arr[12] = "HELLO WORLD";
+        // console.log(arr);
+        // console.log(typeof arr[9], typeof arr[10]);
+        //----------------------------
+        // 배열함수 : push(마지막 index+1 에 값 추가) , pop(마지막 index 값 제거)
+        // -------------------------------------
+      
+        // arr.push("aaa");
+        // arr.push("bbb");
+        // arr.push("ccc");
+        // console.log(arr);
+        // console.log(arr.pop());
+        // console.log(arr.pop());
+        // console.log(arr);
+        // console.log('------------------------------');
+        // //-------------------
+        // 배열함수 : forEach
+        // 배열 내의 모든 요소를 순차적으로 접근하는 반복구문
+        // Callback함수(로직을 전달, ()=>{})
+        // arr.forEach((요소명)=>{처리할 코드})
+        //-----------------------
+         arr.forEach((item,idx)=>{console.log('item',item)})
+
+        //-------------------------------
+        // 정렬 :sort((비교인자1,비교인자2)=>{return 비교인자1 - 비교인자2})
+        // 오름차순 : arr.sort((a,b)=>{return a-b})
+        // 내림차순 : arr.sort((a,b)=>{return b-a})
+        // 기존 배열에서 정렬 진행
+        //--------------------------------------
+        // let arr2 = [10,55,11,24,6,44,1,22]
+        // //오름차순
+        // arr2.sort((a,b)=>{return a-b})
+        
+        // //내림차순
+        // arr2.sort((a,b)=>{return b-a})
+        // console.log(arr2);
+        // //내림차순(약식)
+        // arr2.sort((a,b)=>b-a)
+        //-----------------------------
+        // 필터 : 배열내에서 특정 요소만 필터링
+        // arr.filter((요소명)=>{return 조건식})
+        // 필터링된 요소만 묶은 배열이 따로 생성
+        //-----------------------------
+        // let arr3=['str1',"str2",'str3',7, null,true, 111,false,undefined,{name:"홍길동",age:35},99,10];
+        // const filtered_01 = arr3.filter((item)=>{return typeof item == 'number'})
+        // console.log('filtered_01',filtered_01)
+
+        // const filtered_02 = arr3.filter((item)=>{return typeof item == 'string'})
+        // console.log('filtered_02',filtered_02)
+
+        // const filtered_03 = arr3.filter(item => typeof item == 'object')
+        // console.log('filtered_03',filtered_03)
+        //-----------------------------
+        //누산 : 누적합, 누적곱.... 누적작업
+        //arr.reduce((누적변수,요소명)=>{처리로직},누산변수 초기값)
+        //-----------------------------
+        // let arr4=['str1',"str2",'str3',7, null,true, 111,false,undefined,{name:"홍길동",age:35},99,10.5];
+
+        // const result = 
+        // arr4.filter((item)=>{return typeof item =='number'})
+        //     .reduce((mul,item)=>{return mul*item;} , 1 )
+        // console.log("result",result);
+    </script>
+</body>
+</html>
