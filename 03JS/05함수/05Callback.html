@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // 콜백함수(CALL BACK)
+        // 함수를 호출하는 시점이 바뀌어진 형태의 함수
+        // 기존방식 : 사용자(개발자)가 함수를 직접정의 -> 정의된 함수를 호출(CALL)하여 결과를 반환받는 방식
+        // CALLBACK: 콜백함수에 인자로 로직이 담긴 함수를(함수주소) 전달하여 콜백함수로부터 처리된 결과를
+        // 반환받는 방식       
+
+
+        //함수정의
+        // function func1(n1,n2){
+        //     console.log("func1(n1,n2)...Call!!!");
+        //     return n1+n2;
+        // }
+        // //함수실행(CALL)
+        // const r1 = func1(10,20); // Call-by-Value : 값(Value)전달을 통한 함수 직접 실행(CALL)
+        // console.log("r1",r1);
+
+        // //콜백함수(n1,n2 : Value , logic : function함수명(함수의위치,메모리주소:참조값))
+        // function callbackFunc(n1,n2,logic){
+        //     console.log("callbackFunc start ---------");
+        //     const result = logic(n1,n2);    //외부로부터 받은함수를 내부에서 CALL
+        //     console.log("result",result);
+        //     console.log("callbackFunc end ---------");
+        // }
+        // callbackFunc(100,200,func1);    //콜백함수의 CALL
+        // console.log("-------------------------");
+        // callbackFunc(10,20, (n1,n2)=>{return n2-n1;  });
+        // console.log("-------------------------");
+        // callbackFunc(500,300, (n1,n2)=>{return (n1>n2)?n1-n2:n2-n1;  });
+
+
+        //Callback함수로 Map 만들기
+        // const arr = [
+        //     { "id": "111", "name": "티모", age: 555, "addr": "대구" },
+        //     { "id": "222", "name": "렝가", age: 333, "addr": "인천" },
+        //     { "id": "333", "name": "워윅", age: 222, "addr": "부산" },
+        //     { "id": "444", "name": "문도박사", age: 111, "addr": "울산" },
+        //     { "id": "555", "name": "이즈리얼", age: 99, "addr": "창원" }
+        // ]
+
+        // //제공되는 배열함수 map 
+        // const r1 = arr.map((item) => { return { "id": item.id, "addr": item.addr } })
+        // console.log("r1", r1);
+
+        // //콜백함수로 반든 유사 map
+        // function customMap(array, func) {
+        //     // console.log(array);
+        //     let newArray = [];
+        //     for (let i = 0; i < array.length; i++) {
+        //         // console.log(array[i]);
+        //         const newItem = func(array[i])
+        //         console.log(newItem);
+        //         newArray.push(newItem);
+        //     }
+        //     return newArray;
+        // }
+        // //콜백함수 실행
+        // const r2 = customMap(arr, (item) => { return { "id": item.id, "addr": item.addr } });
+        // console.log("r2", r2);
+
+
+        //미니문제
+        // const students = [
+        //     { name: "철수", score: 85 },
+        //     { name: "영희", score: 42 },
+        //     { name: "민수", score: 91 },
+        //     { name: "지현", score: 55 },
+        //     { name: "태호", score: 73 }
+        // ];
+
+        // function customMap2(students, cutline, func) {
+        //     let newArray = [];
+        //     for (let i = 0; i < students.length; i++) {
+        //         console.log(students[i]);
+        //         const passItem = func(students[i], cutline);
+        //         if (passItem) newArray.push(passItem);
+        //     }
+        //     return newArray;
+        // }
+        // // 여기에 작성하세요(점수가 N점 이상인 학생만 pass)
+        // const result = customMap2(students, 60, (item, cutline) => { return (item.score >= cutline) && { 'name': item.name, 'grade': 'pass' } });
+        // console.log("result", result);
+        // // 기대 출력
+        // // [ { name: '철수', grade: 'pass' },
+        // //   { name: '민수', grade: 'pass' },
+        // //   { name: '태호', grade: 'pass' } ]        
+
+
+
+        // CLOUSURE + CALLBACK
+
+        const arr = [
+            { "id": "111", "name": "티모", age: 555, "addr": "대구" },
+            { "id": "222", "name": "렝가", age: 333, "addr": "인천" },
+            { "id": "333", "name": "워윅", age: 222, "addr": "부산" },
+            { "id": "444", "name": "문도박사", age: 111, "addr": "울산" },
+            { "id": "555", "name": "이즈리얼", age: 99, "addr": "창원" }
+        ]
+
+        //콜백함수로 반든 유사 map + clousure
+        function customMap(array) {
+            //State(클로저 대상)
+            let newArray = [];
+
+            //Inner Function
+            function map(func) {
+                for (let i = 0; i < array.length; i++) {
+                    // console.log(array[i]);
+                    const newItem = func(array[i])
+                    console.log(newItem);
+                    newArray.push(newItem);
+                }
+                return newArray;
+            }
+            function a(){}
+            function b(){}
+            function c(){}
+            return {"map":map,"a":a, "b":b ,"c":c}
+
+        }
+        //콜백함수 실행
+        const clousureFunc = customMap();   //map 함수 리턴
+        console.log(customMap(arr).map((item) => { return { "id": item.id, "addr": item.addr } })   );
+
+    </script>
+</body>
+
+</html>
