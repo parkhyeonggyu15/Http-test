@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: gray;
+        }
+
+        body {
+            margin: 0
+        }
+
+        ;
+
+        .wrapper {}
+
+        .wrapper>header {}
+
+        .wrapper>main {
+            height: 100vh;
+        }
+
+        .wrapper>main>section {
+            height: 100%;
+            display: flex;
+            justify-content: left;
+            align-items: start;
+            gap: 15px;
+        }
+
+        .wrapper>main>section>aside {
+            border: 1px solid;
+            height: 100%;
+            width: 200px;
+        }
+
+        .wrapper>main>section>aside>ul.items {
+            padding: 10px;
+        }
+
+        .wrapper>main>section>aside>ul.items>li {
+            height: 35px;
+            text-align: center;
+            line-height: 35px;
+            border: 1px solid;
+            margin-bottom: 5px;
+
+        }
+
+        .wrapper>main>section>aside>ul.items>li>a {
+            display: block;
+        }
+
+        .wrapper>main>section>article {
+            border: 1px solid;
+            height: 100%;
+            width: calc(100% - 200px);
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+
+        .wrapper>main>section>article .item {
+            border: 1px solid;
+            position: absolute;
+
+            min-width: 100px;
+            min-height: 100px;
+        }
+
+        .wrapper>main>section>article .item-style-1 {
+            background-color: red;
+            /* border-radius: 50%; */
+            box-shadow: 5px 5px 5px gray;
+        }
+
+        .wrapper>main>section>article .item-style-2 {
+            background-color: orange;
+        }
+
+        .wrapper>main>section>article .item-style-3 {
+            background-color: green;
+        }
+
+        .wrapper>main>section>article .item-style-4 {
+            background-color: royalblue;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <header></header>
+        <main>
+            <section>
+                <aside>
+
+                    <ul class="items">
+                        <li><a href="javascript:void(0)" draggable="true" class="item-style-1">ITEM_1</a></li>
+                        <li><a href="javascript:void(0)" draggable="true" class="item-style-2">ITEM_2</a></li>
+                        <li><a href="javascript:void(0)" draggable="true" class="item-style-3">ITEM_3</a></li>
+                        <li><a href="javascript:void(0)" draggable="true" class="item-style-4">ITEM_4</a></li>
+                    </ul>
+
+                </aside>
+                <article class="board">
+
+                </article>
+            </section>
+            <footer></footer>
+        </main>
+    </div>
+
+
+    <script>
+        const liEls = document.querySelectorAll('.items li');
+
+        // 상태 정보
+        var isMoving = false;   //현재 우클릭 상태여부
+        var offsetX = 0;        //현재 마우스의 오프셋 x 위치 확인
+        var offsetY = 0;        //현재 마우스의 오프셋 y 위치 확인
+        var targetNode = false; //isMoving 상태일때 타겟정보
+
+        // 상태정보 저장
+        let dragedNode = null;      // ITEM 드래그 시작시 저장
+        liEls.forEach((liEl) => {
+            // console.log("liEl",liEl);
+            liEl.addEventListener('dragstart', (e) => {
+                // console.log('dragstart',e.target);
+                dragedNode = e.target;
+            });
+        })
+
+        const boardEl = document.querySelector('.board');
+        boardEl.addEventListener('dragover', (e) => { e.preventDefault(); })
+        boardEl.addEventListener('drop', (e) => {
+            e.preventDefault();
+            // console.log("drop",e);
+            // console.log("dragedNode",dragedNode);
+            // console.log("ClientX",e.offsetX);
+            // console.log("ClientY",e.offsetY);
+
+            const newDivEl = document.createElement("div");
+
+            newDivEl.setAttribute('style', `left:${e.offsetX}px;top:${e.offsetY}px`);
+
+            // 드래그 아이템별 각기 다른 class 추가(스타일부여)
+            // console.log('dragedNode_classList', dragedNode.classList[0]);
+            newDivEl.classList.add("item", `${dragedNode.classList[0]}`);
+
+            //마우스down(누를때) 이동모드 처리
+            newDivEl.addEventListener('mousedown', movingHandler);
+
+            boardEl.appendChild(newDivEl);
+        })
+
+        //boardEl.addEventListener('',(e)=>{})
+
+        //----------------------------------------------------
+        // 마우스 우클릭시 이동모드 변환
+        //----------------------------------------------------
+        boardEl.addEventListener('contextmenu', (e) => { e.preventDefault(); })
+        //상태정보 저장
+        const movingHandler = (e) => {
+            console.log(e.button);
+            if (e.button == 2) //우 클릭시
+            {
+                if (!isMoving) {
+                    //옮기는 시작 위치에서 우클릭
+                    isMoving = true;
+                    e.target.style.opacity = ".6";
+
+                    targetNode = e.target;
+                    //마우스좌표 저장 이벤트 추가
+                    boardEl.addEventListener('mousemove', mouseXYsaveHandler);
+                }
+                else {
+                    //옮기는 끝 위치에서 우클릭
+                    isMoving = false;
+                    e.target.style.opacity = "1";
+
+                    targetNode = null;
+                    //마우스좌표 저장 이벤트 제거
+                    boardEl.removeEventListener('mousemove', mouseXYsaveHandler);
+                }
+            }
+        };
+
+        //마우스 이동 처리 핸들러
+        const mouseXYsaveHandler = (e) => {
+            // console.log('mouseXYsaveHandler',e);
+            // 타겟노드의 위치 및 크기 가져오기(뷰포트 기준 )
+            // 반환값 : {left,top,right,bottom,width,height...}
+            
+            const rect = targetNode.getBoundingClientRect();
+            const width = rect.width;
+            const height = rect.height;
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+            // console.log(centerX, centerY);
+
+            console.log('rect.left',rect.left);
+            console.log('e',e.clientX);
+
+            console.log(rect);
+            targetNode.style.left = `${e.clientX - 200 - 20}px`;
+            targetNode.style.top = `${e.clientY - 10}px`;
+        }
+    </script>
+
+</body>
+
+</html>

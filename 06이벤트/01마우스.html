@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 200px;
+            border: 1px solid;
+            font-size: 3rem;
+        }
+
+        div {
+            display: none
+        }
+
+        div.d4 {
+            /* display:block; */
+            border: 5px dashed gray;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: gray;
+            width: 90vw;
+            height: 500px;
+            margin: 0 auto;
+        }
+
+        div.d4::after {
+            content: '+';
+
+            /* position : absolute;
+            left:0;
+            top:0;
+            right:0;
+            bottom:0; */
+            margin: auto;
+            font-size: 3rem;
+        }
+
+        div.preview {
+            display: block;
+            width: 90vw;
+            /* height: 200px; */
+            height: auto;
+            min-height: 200px;
+            border: 1px solid;
+            margin: 10px auto;
+
+        }
+
+        div.preview>img {
+            max-width: 150px;
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            margin: 0 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="d1">
+        <span>0</span>
+    </div>
+    <hr />
+    <div class="d2"></div>
+    <hr />
+    <div class="d3"> </div>
+    <hr />
+    <div class="d4"></div>
+    <hr />
+    <div class="preview"></div>
+
+    <script>
+
+        const d1El = document.querySelector('.d1');
+        var cnt = 0;
+        d1El.addEventListener('click', (e) => {
+            console.log(e);
+            cnt++;
+            d1El.querySelector('span').innerHTML = cnt;
+        });
+
+        // 클로저함수
+        function clickHandler() {
+            // 상태변수
+            let cnt = 0;
+            // Setter
+            function setCnt(n) {
+                if (n == null || n == undefined)
+                    cnt++;
+                else
+                    cnt = n;
+            }
+            // Getter
+            function getCnt() {
+                return cnt;
+            }
+            //
+            return { "setCnt": setCnt, "getCnt": getCnt };
+        }
+        const clickFuncs = clickHandler();
+
+        // d2El
+        const d2El = document.querySelector('.d2');
+        d2El.addEventListener('click', (e) => {
+            // console.log('d2El',this);
+            clickFuncs.setCnt()
+            d2El.innerHTML = `<h1>${clickFuncs.getCnt()}</h1>`;
+
+        })
+
+        /*  
+            mouseenter  : 마우스 포인터가 특정영역내로 진입시
+            mouseover   : 마우스 포인터가 특정영역내에 머무를시
+            mouseleave  : 마우스 포인터가 특정영역밖으로 나갈때
+            click       : 마우스 1회 클릭
+            dblclick    : 마우스 2회 클릭
+            contextmenu : 마우스 우클릭
+        */
+
+        //d3El
+        // const d3El = document.querySelector('.d3');
+        // d3El.addEventListener('mouseenter', () => {d3El.innerHTML='<h4>mouseenter</h4>' })
+        // d3El.addEventListener('mouseleave', () => {d3El.innerHTML='<h4>mouseleave</h4>' })
+        // // d3El.addEventListener('mouseover', () => { d3El.innerHTML='<h4>mouseover</h4>'})
+        // d3El.addEventListener('dblclick', () => {d3El.innerHTML='<h4>dblclick</h4>' })
+        // d3El.addEventListener('contextmenu', (e) => {d3El.innerHTML='<h4>contextmenu</h4>';e.preventDefault(); })
+
+        /*
+            //요소자체가 드래그 될때
+            dragstart   :   드래그 시작(마우스를 끌어당길때의 시작점)
+            dragend     :   드래그 종료
+            drag        :   드래그 중
+
+            //드래그된 요소가 해당 위치에접근할때
+            dragenter   :   드래그가 대상 영역 위로 이동시(요소가 드랍의 대상이 될때)
+            dragover    :   드래그가 대상 영역 위에 있는 동안(요소가 드랍의 대상이 될때)
+            dragleave   :   드래그가 대상 영역에서 벗어날때(요소가 드랍의 대상이 될때)
+            drop        :   드랍(끌어온 마우스의 왼쪽PUSH상태->손을 뗀경우)
+        */
+
+        const d4El = document.querySelector(".d4");
+        d4El.addEventListener("dragenter", (e) => { e.preventDefault(); console.log("dragenter") });
+        d4El.addEventListener("dragover", (e) => {
+            e.preventDefault();
+            console.log("dragover")
+            d4El.style.border = "5px dashed lightgray";
+            d4El.style.color = "lightgray";
+        }
+        );
+        d4El.addEventListener("dragleave", (e) => {
+
+            e.preventDefault();
+            console.log("dragleave");
+            d4El.style.border = "5px dashed gray";
+            d4El.style.color = "gray";
+        }
+        );
+
+        //유효성 검증
+        function isValid(file){
+            // file mime-type이 image/* 검증
+            // console.log(file.type);
+            if(!file.type.startsWith('image/')){
+                alert("이미지 파일만 업로드 가능합니다.");
+                return false;
+            }
+
+            // file size가 1Mb(1024byte*1024byte) 이하 검증
+            console.log(file.size);
+            if(file.size >= (1024*1024)){
+                alert("파일 1개당 허용 사이즈는 1MB 입니다.");
+                return false;
+            }
+
+            return true;
+        }
+
+        d4El.addEventListener("drop", (e) => {
+            e.preventDefault();
+            console.log("drop")
+            // console.log(e); 
+            // console.log(e.dataTransfer); 
+            // console.log(e.dataTransfer.files); 
+            const files = e.dataTransfer.files;
+
+
+            // preview
+            const previewEl = document.querySelector('.preview');
+
+            for (let i = 0; i < files.length; i++) {
+                
+                if(!isValid(files[i])){
+                    return ;
+                }
+
+
+                const newImgEl = document.createElement('img');
+                newImgEl.src = URL.createObjectURL(files[i]);
+                // newImgEl.addEventListener('click',()=>{});
+                previewEl.appendChild(newImgEl);
+            }
+
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>
+    </script>
+</body>
+</html>
