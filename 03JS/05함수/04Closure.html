@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 클로저
+        // 클로저는 내부 함수가 외부 함수의 변수에 접근 할 수 있는 방법을 의미한다
+        // 정보 은닉 : 클로저를 사용하여 외부에서 접근 할 수 없도록 변수를 보호하고,
+        // 함수를 통해서만 접근 가능하도록 제한 할 수 있다
+
+        // 데이터 보존 : 클로저를 사용하여 함수가 생성될 당시의 환경을 유지하면서,
+        // 함수내에서 데이터를 영구적으로 보존할 수 있다
+        // 비동기 처리 : 클로저를 사용하여 비동기적인 작업에서 결과를 유지하고,
+        // 필요할 때에 접근 할 수 있다
+        
+        function outer(){
+            //상태값 보관
+            let state = 0;
+
+            //내부함수
+            function setState(n) {
+                state = n; //렉스컬 스코프(outer의 state에 접근가능)
+                console.log('state..',state);
+            }
+
+            return setState; //함수이름을 리턴하면 만들어진 함수의 위치정보(메모리주소) 가 반환
+        }
+        const closureFunc = outer();
+        closureFunc(10);
+        closureFunc(20);
+        closureFunc(30);
+        closureFunc(40);
+        
+
+        var x = 'global x'; //전역스코프(Window)
+        let n1 = 10;        //전역스코프(Declarative Environment Recode)
+        console.log(window.x);
+        console.log(window.n1); //x
+
+        //Outer 함수 지역 스코프
+        function outer(){
+            var x = 'outer.x';
+            var y = 0;
+            console.log('outer x', x);
+            console.log('outer y', y);
+
+            // inner 함수 내의 지역 스코프
+            function inner(){
+                var x = 'inner x';
+                console.log('inner x',x);
+
+                // if 블록 지역 스코프
+                if(true){
+                    console.log('x',x);
+                    var x = "if x";
+                    console.log('x',x);
+                }
+            }
+            inner();
+        }
+        outer();
+    </script>
+</body>
+</html>

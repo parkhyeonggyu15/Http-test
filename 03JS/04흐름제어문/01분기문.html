@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: beige;
+        }
+
+        .layout {
+            width: 1280px;
+            height: 100vh;
+            margin: 0 auto;
+            background-color: white;
+        }
+
+        .layout-tablet {
+            width: 960px;
+            height: 100vh;
+            margin: 0 auto;
+            background-color: white;
+        }
+
+        .layout-mobile {
+            width: 350px;
+            height: 100vh;
+            margin: 0 auto;
+            background-color: white;
+        }
+
+        .mode {
+            position: fixed;
+            left: 5px;
+            top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <select name="" id="" class="mode">
+            <option value="desktop">데스크탑</option>
+            <option value="tablet">태블릿</option>
+            <option value="mobile">모바일</option>
+        </select>
+    </div>
+    <div class="wrapper layout">
+
+    </div>
+    <script>
+        //if(조건식)
+        //{
+        // 참인경우 실행할 종속 문장
+        //}
+        //else
+        //{
+        // 거짓인경우 실행할 종속 문장
+        //}
+
+        const modeEl = document.querySelector('.mode');
+        const wrapperEl = document.querySelector('.wrapper');
+
+        modeEl.addEventListener('change', (e) => {
+            // console.log('e',e.target.value);
+            const mode = e.target.value;
+            if (mode == 'desktop') {
+                //데스크탑 모드
+                wrapperEl.classList.remove('layout-mobile','layout-tablet');
+                wrapperEl.classList.add('layout');
+                console.log('데스크탑모드', wrapperEl.classList);
+            }
+            else if(mode == 'tablet')
+            {
+                wrapperEl.classList.remove('layout-mobile','layout');
+                wrapperEl.classList.add('layout-tablet');                
+                console.log('태블릿', wrapperEl.classList);
+            } 
+            else {
+                //모바일 모드
+                wrapperEl.classList.remove('layout','layout-tablet');
+                wrapperEl.classList.add('layout-mobile');
+                console.log('모바일모드', wrapperEl.classList);
+            }
+
+        })
+
+
+    </script>
+</body>
+
+</html>
