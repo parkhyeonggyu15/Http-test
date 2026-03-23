@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td {
+            width: 50px;
+            height: 50px;
+            border: 1px solid gray;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        input {
+            width: 90%;
+            height: 100%;
+            outline: none;
+            border: 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <input id="rownum" placeholder="행의개수입력" style="width:200px;">
+    <input id="colnum" placeholder="열의개수입력" style="width:200px;">
+    <button onclick="makemap()">생성</button>
+    <hr>
+    <table id="tbl">
+        <tbody>
+    
+        
+        </tbody>
+    </table>
+    <script>
+       
+        //State 
+        let curRow = 0;
+        let curCol = 0;
+        let selectedNode = null;
+        
+        const selectedStyle = (curRow, curCol) => {
+            //
+            const selectedNode = document.querySelector(`[data-row='${curRow}'][data-col='${curCol}']`);
+            selectedNode.style.color="white";
+            selectedNode.style.backgroundColor="gray";
+        }
+        const deSelectedStyle = (node) => {
+            //
+            node.style.color="black";
+            node.style.backgroundColor="white";
+        }
+
+        const makemap = () => {
+            //input row/col 확인
+            const row = document.querySelector('#rownum').value; //tr개수
+            const col = document.querySelector('#colnum').value; //td개수
+            const tbodyEl = document.querySelector('#tbl tbody');
+            
+            //기존표 삭제
+            while(tbodyEl.firstChild){
+                tbodyEl.removeChild(tbodyEl.firstChild);
+            }
+
+            //표생성
+            for(let i=0;i<row;i++){
+                const trEl = document.createElement('tr');
+                for(let j=0;j<col;j++){
+                    const tdEl = document.createElement('td');
+                    
+                    //클릭이벤트 추가
+                    tdEl.addEventListener('click',(e)=>{
+                        // console.log('clicked..',e);
+                        const dataset = tdEl.dataset;
+                        // console.log('dataset',dataset);
+                        const clickedRow = dataset.row;
+                        const clickedCol = dataset.col;
+                        console.log('row',clickedRow,'col',clickedCol);
+
+                        if(selectedNode==null) //초기상태
+                        {
+
+                        }
+                        else
+                        {
+                            //기존 선택된 노드의 스타일 원래대로
+                            deSelectedStyle(selectedNode);
+
+                        }
+                            //클릭한 위치(row,col)의 스타일을 지정
+                            selectedStyle(clickedRow,clickedCol);
+                            selectedNode=tdEl;
+                        });
+
+
+                    tdEl.innerHTML=`[${i},${j}]`;
+                    tdEl.setAttribute('data-row',i);
+                    tdEl.setAttribute('data-col',j);
+                    trEl.appendChild(tdEl);
+                }
+                
+                tbodyEl.appendChild(trEl);
+            }
+        }
+    </script>
+</body>
+
+</html>
