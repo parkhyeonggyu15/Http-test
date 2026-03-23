@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{margin: 0%; padding: 0%;}
+
+        .wrapper{}
+        .wrapper>header{}
+        .wrapper>header>.top-header{
+            height:50px;background-color: orange;
+        }
+        .wrapper>header>nav{
+            height: 100px;background-color: royalblue;
+            transition: .5s;
+        }
+        .nav-fixed{
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+        .wrapper>main{}
+        .wrapper>main>section{height: 500px;}
+        .wrapper>main>section:nth-child(1){background-color: red;}
+        .wrapper>main>section:nth-child(2){background-color: green;}
+        .wrapper>main>section:nth-child(3){background-color: violet;}
+        .wrapper>main>section:nth-child(4){background-color: navy;}
+        .wrapper>main>section:nth-child(5){background-color: yellow;}
+        .wrapper>footer{height: 300px; background-color: black;}
+    </style>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <header>
+            <div class="top-header"></div>
+            <nav></nav>
+        </header>
+        <main>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+        </main>
+        <footer></footer>
+    </div>
+    <script>
+        document.addEventListener('scroll',()=>{
+            //window.scrollY : ViewPort를 기준으로 가장 위쪽 부분의 세로축 위치
+            //window.scrollX : ViewPort를 기준으로 가장 왼쪽 부분부터의 가로축 위치
+            console.log("scroll window.scrollY",window.scrollY);
+            // console.log("scrollTop",document.documentElement.scrollTop);
+            // console.log("scrollHeight",document.documentElement.scrollHeight);
+            
+            const navEl = document.querySelector('.wrapper>header>nav');
+
+            if(window.scrollY>=50){
+                navEl.classList.add('nav-fixed');
+            }else{
+                navEl.classList.remove('nav-fixed');
+            }
+        })
+            
+    </script>
+</body>
+</html>

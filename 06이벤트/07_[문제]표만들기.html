@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td {
+            width: 50px;
+            height: 50px;
+            border: 1px solid gray;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        input {
+            width: 90%;
+            height: 100%;
+            outline: none;
+            border: 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <input id="rownum" placeholder="행의개수입력" style="width:200px;">
+    <input id="colnum" placeholder="열의개수입력" style="width:200px;">
+    <button onclick="makemap()">생성</button>
+    <hr>
+    <table id="tbl">
+        <tbody>
+    
+        
+        </tbody>
+    </table>
+    <script>
+       
+        //State 
+        let curRow = 0;
+        let curCol = 0;
+        let selectedNode = null;
+        let maxcol = 0;
+        let maxCol = 0;
+        
+        const selectedStyle = (curRow, curCol) => {
+            //
+            const selectedNode = document.querySelector(`[data-row='${curRow}'][data-col='${curCol}']`);
+            selectedNode.style.color="white";
+            selectedNode.style.backgroundColor="gray";
+        }
+        const deSelectedStyle = (node) => {
+            //
+            node.style.color="black";
+            node.style.backgroundColor="white";
+        }
+
+        const makemap = () => {
+            //input row/col 확인
+            const row = document.querySelector('#rownum').value; //tr개수
+            const col = document.querySelector('#colnum').value; //td개수
+            const tbodyEl = document.querySelector('#tbl tbody');
+            maxRow = row-1;
+            maxCol = col-1;
+            //기존표 삭제
+            while(tbodyEl.firstChild){
+                tbodyEl.removeChild(tbodyEl.firstChild);
+            }
+
+            //표생성
+            for(let i=0;i<row;i++){
+                const trEl = document.createElement('tr');
+                for(let j=0;j<col;j++){
+                    const tdEl = document.createElement('td');
+                    
+                    //클릭이벤트 추가
+                    tdEl.addEventListener('click',(e)=>{
+                        // console.log('clicked..',e);
+                        const dataset = tdEl.dataset;
+                        // console.log('dataset',dataset);
+                        const clickedRow = dataset.row;
+                        const clickedCol = dataset.col;
+                        console.log('row',clickedRow,'col',clickedCol);
+
+                        if(selectedNode==null) //초기상태
+                        {
+
+                        }
+                        else
+                        {
+                            //기존 선택된 노드의 스타일 원래대로
+                            deSelectedStyle(selectedNode);
+
+                        }
+                            //클릭한 위치(row,col)의 스타일을 지정
+                            selectedStyle(clickedRow,clickedCol);
+                            selectedNode=tdEl;
+                        });
+
+
+                    tdEl.innerHTML=`[${i},${j}]`;
+                    tdEl.setAttribute('data-row',i);
+                    tdEl.setAttribute('data-col',j);
+                    trEl.appendChild(tdEl);
+                }
+                
+                tbodyEl.appendChild(trEl);
+            }
+        }
+        document.addEventListener("keydown",(e)=>{
+            // console.log("keydown",e.keyCode);
+            // console.log("selectedNode's dataSet",selectedNode.dataset);
+            let row = selectedNode.dataset.row;
+            let col = selectedNode.dataset.col;
+            console.log("row",row,"col",col);
+            if(e.keyCode == 37) //LEFT
+            {
+                //기존선택 노드 스타일 초기화
+                deSelectedStyle(selectedNode);
+                //col을 1감소
+                (Number(col)-1<0)? col=0 : col--;
+                selectedStyle(row,col);
+                console.log("LEFT");
+                
+                //바뀐위치로 selectedNode 변경
+                selectedNode = document.querySelector(`[data-row='${row}'][data-col='${col}']`);
+
+            }
+            else if(e.keyCode == 39) //RIGHT
+            {   
+                deSelectedStyle(selectedNode);
+                (Number(col) + 1 > maxCol)? col = maxCol : col++;
+                selectedStyle(row,col);
+                console.log("RIGHT");
+
+                selectedNode = document.querySelector(`[data-row='${row}'][data-col='${col}']`);
+            }
+            else if(e.keyCode == 38)  //UP
+            {
+                deSelectedStyle(selectedNode);
+                (Number(row) - 1 < 0)? row = 0 : row--;
+                selectedStyle(row,col);
+                console.log("UP");
+                selectedNode = document.querySelector(`[data-row='${row}'][data-col='${col}']`);
+            }
+            else if(e.keyCode == 40) // DOWN
+            {
+                 deSelectedStyle(selectedNode);
+                (Number(row) + 1 > maxRow)? row= maxRow : row++;
+                selectedStyle(row,col);
+                console.log("DOWN");
+                selectedNode = document.querySelector(`[data-row='${row}'][data-col='${col}']`);
+            }
+
+            
+        });
+    </script>
+</body>
+
+</html>

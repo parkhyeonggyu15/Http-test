@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ball {
+            border: 1px solid gray;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: absolute;
+            left: 0%;
+            right: 0%;
+            top: 0%;
+            bottom: 0%;
+            margin: auto;
+            transition: .5s;
+        }
+
+        .ball-1280px {
+            width: 500px;
+            height: 500px;
+            background-color: orange;
+        }
+
+        .ball-860px {
+            width: 25px;
+            height: 250px;
+            background-color: royalblue;
+        }
+
+        .ball-380px {
+            width: 70px;
+            height: 70px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="ball"></div>
+
+    <script>
+        //------------------------------
+        //Load이벤트
+        //------------------------------
+        //DOMContentLoaded : 최초 Document 로드시 1회 동작(HTML이 전부 파싱된 이후 DOM객체가 완성되고 나서 실행,
+        //CSS,외부파일 로드여부와는 관계없다)
+        //load             : 최초 Document 로드시 1회 동작(모든 리소스가 완전히 로드된 이후 실행)
+        
+
+
+        window.addEventListener('DOMContentLoaded', (e) => {
+        
+            const ballEl = document.querySelector('.ball');
+            
+            // 초기 화면사이즈별 반응 처리
+                if (window.innerWidth >= 1280) {
+                    ballEl.classList.add('ball-1280px');
+                }
+                else if (window.innerWidth >= 380) 
+                {
+                    ballEl.classList.add('ball-860px');
+                }
+                else{
+                    ballEl.classList.add('ball-380px');
+                }
+
+
+            // 반응형 처리
+            window.addEventListener('resize', () => {
+                console.log("window.outerWidth", window.outerWidth);
+                // console.log("window.outerHeight",window.outerHeight);
+
+                // console.log("window.innerWidth",window.innerWidth);
+                // console.log("window.innerHeight",window.innerHeight);
+
+                if (window.outerWidth >= 1280) {
+                    ballEl.classList.remove('ball-860px', 'ball-380px');
+                    ballEl.classList.add('ball-1280px');
+                }
+                else if (window.outerWidth >= 380) {
+                    ballEl.classList.remove('ball-1280px', 'ball-380px');
+                    ballEl.classList.add('ball-860px');
+                }
+                else{
+                    ballEl.classList.remove('ball-1280px', 'ball-860px');
+                    ballEl.classList.add('ball-380px');
+                }
+            });
+        });
+
+
+    </script>
+
+</body>
+
+</html>

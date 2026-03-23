@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    KEYUP : <input id="input1"><br>
+    <p id="p1"></p>
+    <hr>
+    KEYDOWN : <input id="input2"><br>
+    <p id="p2"></p>
+    <hr>
+    KEYPRESS : <input id="input3"><br>
+    <p id="p3"></p>
+    <hr>
+
+    <script>
+        //keyup     : 키보드가 올라올때(영문,대소문자구별x,제어문자도 포함)
+        //keydown   : 키보드가 내려갈때(영문,대소문자구별x,제어문자도 포함)
+        //keypress   : 키보드를 계속누를때(영문,대소문자구별o,제어문자도 포함x)
+        const keyupEl = document.querySelector('#input1');
+        const p1El = document.querySelector('#p1');
+        keyupEl.addEventListener("keyup",(e)=>{
+            // console.log('keyup',e);
+            console.log('keyup',e);
+            console.log('keyup',e.key);
+            console.log('keyup',e.keyCode);
+            if(e.keyCode == 13){
+                const value = keyupEl.value;
+                p1El.innerHTML+=value+"<br/>";
+                keyupEl.value="";
+            }
+        });
+        const keydownEl = document.querySelector('#input2');
+        keydownEl.addEventListener("keydown",(e)=>{
+            console.log('keydown',e);
+            console.log('keydown',e.key);
+            console.log('keydown',e.keyCode);
+        });
+        const keypressEl = document.querySelector('#input3');
+        keypressEl.addEventListener("keypress",(e)=>{
+            console.log('keydown',e);
+            console.log('keydown',e.key);
+            console.log('keydown',e.keyCode);
+        });
+    </script>
+</body>
+</html>
