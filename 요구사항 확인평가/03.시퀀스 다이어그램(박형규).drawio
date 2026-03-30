@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.5.2 Chrome/142.0.7444.265 Electron/39.6.1 Safari/537.36" version="29.5.2" pages="4">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6" pages="5">
   <diagram name="요구사항정리" id="si9WiEyHauwOeKY3Vzi-">
     <mxGraphModel dx="1665" dy="849" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -396,104 +396,10 @@
     </mxGraphModel>
   </diagram>
   <diagram id="lpcPh5SkPUE-E_qMeIP2" name="시퀀스 다이어그램">
-    <mxGraphModel dx="1019" dy="606" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
+    <mxGraphModel dx="1584" dy="934" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="BO7GnB9CxnLGfO9nLtRo-1" parent="1" style="shape=table;startSize=40;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;" value="&lt;div&gt;&amp;lt;&amp;lt;유스케이스 명세서&amp;gt;&amp;gt;&lt;/div&gt;유스케이스명 : 결제" vertex="1">
-          <mxGeometry height="690" width="510" y="200" as="geometry" />
-        </mxCell>
-        <mxCell id="BO7GnB9CxnLGfO9nLtRo-2" parent="BO7GnB9CxnLGfO9nLtRo-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;strokeColor=default;verticalAlign=middle;fontStyle=0" value="" vertex="1">
-          <mxGeometry height="30" width="510" y="40" as="geometry" />
-        </mxCell>
-        <mxCell id="BO7GnB9CxnLGfO9nLtRo-3" parent="BO7GnB9CxnLGfO9nLtRo-2" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="목표" vertex="1">
-          <mxGeometry height="30" width="60" as="geometry">
-            <mxRectangle height="30" width="60" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="BO7GnB9CxnLGfO9nLtRo-4" parent="BO7GnB9CxnLGfO9nLtRo-2" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-weight: 400; text-wrap: nowrap;&quot;&gt;회원이 상품을 구매하기 위해 결제할 수 있도록 시스템을 통해 결제절차를 완료한다.&lt;/span&gt;" vertex="1">
-          <mxGeometry height="30" width="450" x="60" as="geometry">
-            <mxRectangle height="30" width="450" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="BO7GnB9CxnLGfO9nLtRo-5" parent="BO7GnB9CxnLGfO9nLtRo-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" value="" vertex="1">
-          <mxGeometry height="30" width="510" y="70" as="geometry" />
-        </mxCell>
-        <mxCell id="BO7GnB9CxnLGfO9nLtRo-6" parent="BO7GnB9CxnLGfO9nLtRo-5" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="엑터" vertex="1">
-          <mxGeometry height="30" width="60" as="geometry">
-            <mxRectangle height="30" width="60" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="BO7GnB9CxnLGfO9nLtRo-7" parent="BO7GnB9CxnLGfO9nLtRo-5" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=0;overflow=hidden;whiteSpace=wrap;html=1;" value="회원" vertex="1">
-          <mxGeometry height="30" width="450" x="60" as="geometry">
-            <mxRectangle height="30" width="450" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="BO7GnB9CxnLGfO9nLtRo-8" parent="BO7GnB9CxnLGfO9nLtRo-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" value="" vertex="1">
-          <mxGeometry height="30" width="510" y="100" as="geometry" />
-        </mxCell>
-        <mxCell id="BO7GnB9CxnLGfO9nLtRo-9" parent="BO7GnB9CxnLGfO9nLtRo-8" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="사전 조건" vertex="1">
-          <mxGeometry height="30" width="60" as="geometry">
-            <mxRectangle height="30" width="60" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="BO7GnB9CxnLGfO9nLtRo-10" parent="BO7GnB9CxnLGfO9nLtRo-8" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=0;overflow=hidden;whiteSpace=wrap;html=1;" value="상품페이지에서 구매하기 버튼을 클릭하여 결제페이지로 이동한다." vertex="1">
-          <mxGeometry height="30" width="450" x="60" as="geometry">
-            <mxRectangle height="30" width="450" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="BO7GnB9CxnLGfO9nLtRo-11" parent="BO7GnB9CxnLGfO9nLtRo-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" value="" vertex="1">
-          <mxGeometry height="30" width="510" y="130" as="geometry" />
-        </mxCell>
-        <mxCell id="BO7GnB9CxnLGfO9nLtRo-12" parent="BO7GnB9CxnLGfO9nLtRo-11" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="사후 처리" vertex="1">
-          <mxGeometry height="30" width="60" as="geometry">
-            <mxRectangle height="30" width="60" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="BO7GnB9CxnLGfO9nLtRo-13" parent="BO7GnB9CxnLGfO9nLtRo-11" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=0;overflow=hidden;whiteSpace=wrap;html=1;" value="결제 정상 처리 후 마이페이지로 이동한다." vertex="1">
-          <mxGeometry height="30" width="450" x="60" as="geometry">
-            <mxRectangle height="30" width="450" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="BO7GnB9CxnLGfO9nLtRo-14" parent="BO7GnB9CxnLGfO9nLtRo-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" value="" vertex="1">
-          <mxGeometry height="170" width="510" y="160" as="geometry" />
-        </mxCell>
-        <mxCell id="BO7GnB9CxnLGfO9nLtRo-15" parent="BO7GnB9CxnLGfO9nLtRo-14" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="기본흐름" vertex="1">
-          <mxGeometry height="170" width="60" as="geometry">
-            <mxRectangle height="170" width="60" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="BO7GnB9CxnLGfO9nLtRo-16" parent="BO7GnB9CxnLGfO9nLtRo-14" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=0;overflow=hidden;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;div&gt;1 회원이 상품페이지에서 구매하기 버튼을 클릭한다.&lt;/div&gt;&lt;div&gt;2 시스템은 결제 정보 입력 폼을 전달한다.&lt;/div&gt;&lt;div&gt;3 회원은 배송지를 입력한다.&lt;/div&gt;&lt;div&gt;4 회원은 결제 수단을 선택한다.&lt;/div&gt;&lt;div&gt;5 회원은 결제 포인트 여부를 선택한다.&lt;/div&gt;&lt;div&gt;6 시스템은 결제 정보를 결제대행사에 전달한다.&lt;br&gt;&lt;/div&gt;&lt;div&gt;7 결제대행사는 시스템에 결제 여부를 전달한다.&lt;/div&gt;&lt;div&gt;8 시스템은 결제 승인 확인 후 결제 완료 메시지를 전달한다.&lt;/div&gt;&lt;div&gt;9 회원은 메시지 결제 완료 버튼을 클릭한다.&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="170" width="450" x="60" as="geometry">
-            <mxRectangle height="170" width="450" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="BO7GnB9CxnLGfO9nLtRo-17" parent="BO7GnB9CxnLGfO9nLtRo-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" value="" vertex="1">
-          <mxGeometry height="130" width="510" y="330" as="geometry" />
-        </mxCell>
-        <mxCell id="BO7GnB9CxnLGfO9nLtRo-18" parent="BO7GnB9CxnLGfO9nLtRo-17" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="대안흐름" vertex="1">
-          <mxGeometry height="130" width="60" as="geometry">
-            <mxRectangle height="130" width="60" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="BO7GnB9CxnLGfO9nLtRo-19" parent="BO7GnB9CxnLGfO9nLtRo-17" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=0;overflow=hidden;whiteSpace=wrap;html=1;" value="&lt;div&gt;취소 버튼를 입력하면 메인 화면으로 이동&lt;/div&gt;" vertex="1">
-          <mxGeometry height="130" width="450" x="60" as="geometry">
-            <mxRectangle height="130" width="450" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="BO7GnB9CxnLGfO9nLtRo-20" parent="BO7GnB9CxnLGfO9nLtRo-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" value="" vertex="1">
-          <mxGeometry height="230" width="510" y="460" as="geometry" />
-        </mxCell>
-        <mxCell id="BO7GnB9CxnLGfO9nLtRo-21" parent="BO7GnB9CxnLGfO9nLtRo-20" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="예외흐름" vertex="1">
-          <mxGeometry height="230" width="60" as="geometry">
-            <mxRectangle height="230" width="60" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="BO7GnB9CxnLGfO9nLtRo-22" parent="BO7GnB9CxnLGfO9nLtRo-20" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=0;overflow=hidden;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;1a 로그인을 하지 않고 구매를 하려는 경우&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;시스템은 &#39;로그인이 필요한 서비스입니다. 로그인 하시겠습니까?&#39;&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;라는 메시지를 비회원에게 전달&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;1b 인증을 하지않고 회원가입을 하려는 경우&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;시스템은 &#39;인증이 되지 않았습니다&#39; 라는 메시지를 비회원에게 전달&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;1c 결제&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&#39;인증처리를 위한 code를 입력하세요&#39; 메시지를 비회원에게 전달&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1d email형식에 맞지 않는 주소 입력&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&#39;올바른 이메일 형식을 입력하세요&#39; 라는 메시지를 비회원에게 전달&lt;/div&gt;" vertex="1">
-          <mxGeometry height="230" width="450" x="60" as="geometry">
-            <mxRectangle height="230" width="450" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="BO7GnB9CxnLGfO9nLtRo-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="시퀀스 다이어그램" vertex="1">
           <mxGeometry height="30" width="120" x="680" y="160" as="geometry" />
         </mxCell>
@@ -926,6 +832,635 @@
         </mxCell>
         <mxCell id="klqeVXPvn6f1aDfYu2xb-29" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="로그인 페이지로 이동" vertex="1">
           <mxGeometry height="30" width="110.25" x="1174.75" y="1520" as="geometry" />
+        </mxCell>
+        <mxCell id="3WTZxi-UX_MEPKbKkTpc-1" parent="1" style="shape=table;startSize=40;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;" value="&lt;div&gt;&amp;lt;&amp;lt;유스케이스 명세서&amp;gt;&amp;gt;&lt;/div&gt;유스케이스명 : 회원가입" vertex="1">
+          <mxGeometry height="690" width="510" x="20" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="3WTZxi-UX_MEPKbKkTpc-2" parent="3WTZxi-UX_MEPKbKkTpc-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;strokeColor=default;verticalAlign=middle;fontStyle=0" value="" vertex="1">
+          <mxGeometry height="30" width="510" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3WTZxi-UX_MEPKbKkTpc-3" parent="3WTZxi-UX_MEPKbKkTpc-2" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="목표" vertex="1">
+          <mxGeometry height="30" width="60" as="geometry">
+            <mxRectangle height="30" width="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3WTZxi-UX_MEPKbKkTpc-4" parent="3WTZxi-UX_MEPKbKkTpc-2" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-weight: 400; text-wrap: nowrap;&quot;&gt;비회원이 회원가입을 할 수 있도록 시스템을 통해 회원가입 절차를 완료한다&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="450" x="60" as="geometry">
+            <mxRectangle height="30" width="450" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3WTZxi-UX_MEPKbKkTpc-5" parent="3WTZxi-UX_MEPKbKkTpc-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" value="" vertex="1">
+          <mxGeometry height="30" width="510" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="3WTZxi-UX_MEPKbKkTpc-6" parent="3WTZxi-UX_MEPKbKkTpc-5" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="엑터" vertex="1">
+          <mxGeometry height="30" width="60" as="geometry">
+            <mxRectangle height="30" width="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3WTZxi-UX_MEPKbKkTpc-7" parent="3WTZxi-UX_MEPKbKkTpc-5" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=0;overflow=hidden;whiteSpace=wrap;html=1;" value="비회원" vertex="1">
+          <mxGeometry height="30" width="450" x="60" as="geometry">
+            <mxRectangle height="30" width="450" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3WTZxi-UX_MEPKbKkTpc-8" parent="3WTZxi-UX_MEPKbKkTpc-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" value="" vertex="1">
+          <mxGeometry height="30" width="510" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="3WTZxi-UX_MEPKbKkTpc-9" parent="3WTZxi-UX_MEPKbKkTpc-8" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="사전 조건" vertex="1">
+          <mxGeometry height="30" width="60" as="geometry">
+            <mxRectangle height="30" width="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3WTZxi-UX_MEPKbKkTpc-10" parent="3WTZxi-UX_MEPKbKkTpc-8" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=0;overflow=hidden;whiteSpace=wrap;html=1;" value="메인페이지에서 회원가입 버튼을 클릭하여 회원가입 페이지로 이동한다" vertex="1">
+          <mxGeometry height="30" width="450" x="60" as="geometry">
+            <mxRectangle height="30" width="450" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3WTZxi-UX_MEPKbKkTpc-11" parent="3WTZxi-UX_MEPKbKkTpc-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" value="" vertex="1">
+          <mxGeometry height="30" width="510" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="3WTZxi-UX_MEPKbKkTpc-12" parent="3WTZxi-UX_MEPKbKkTpc-11" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="사후 처리" vertex="1">
+          <mxGeometry height="30" width="60" as="geometry">
+            <mxRectangle height="30" width="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3WTZxi-UX_MEPKbKkTpc-13" parent="3WTZxi-UX_MEPKbKkTpc-11" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=0;overflow=hidden;whiteSpace=wrap;html=1;" value="회원 정상 가입 이후 로그인 페이지로 이동" vertex="1">
+          <mxGeometry height="30" width="450" x="60" as="geometry">
+            <mxRectangle height="30" width="450" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3WTZxi-UX_MEPKbKkTpc-14" parent="3WTZxi-UX_MEPKbKkTpc-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" value="" vertex="1">
+          <mxGeometry height="170" width="510" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="3WTZxi-UX_MEPKbKkTpc-15" parent="3WTZxi-UX_MEPKbKkTpc-14" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="기본흐름" vertex="1">
+          <mxGeometry height="170" width="60" as="geometry">
+            <mxRectangle height="170" width="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3WTZxi-UX_MEPKbKkTpc-16" parent="3WTZxi-UX_MEPKbKkTpc-14" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=0;overflow=hidden;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;div&gt;1 비회원이 계정 입력란에 email 계정을 입력하고 인증 버튼을 클릭한다&lt;/div&gt;&lt;div&gt;2 시스템은 해당 계정으로 인증코드를 전송한다&lt;/div&gt;&lt;div&gt;3 시스템은 비회원이 보는 페이지에 인증코드 확인폼을 활성화 한다&lt;/div&gt;&lt;div&gt;4 회원은 이메일 인증코드를 인증코드 확인폼에 입력한 뒤 인증확인 버튼을 클릭한다&lt;/div&gt;&lt;div&gt;5 시스템은 인증확인 처리를 한뒤 인증확인 메시지를 전달한다&lt;/div&gt;&lt;div&gt;6 비회원은&amp;nbsp; 이름/연락처/주소/를 입력하고 회원가입 버튼을 클릭한다&lt;/div&gt;&lt;div&gt;7 시스템은 회원가입 처리 이후 메시지를 전달한다&lt;/div&gt;&lt;div&gt;8 비회원이 메시지 확인 버튼을 클릭한다&lt;/div&gt;&lt;div&gt;9 시스템은 로그인 페이지로 이동한다&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="450" x="60" as="geometry">
+            <mxRectangle height="170" width="450" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3WTZxi-UX_MEPKbKkTpc-17" parent="3WTZxi-UX_MEPKbKkTpc-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" value="" vertex="1">
+          <mxGeometry height="130" width="510" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="3WTZxi-UX_MEPKbKkTpc-18" parent="3WTZxi-UX_MEPKbKkTpc-17" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="대안흐름" vertex="1">
+          <mxGeometry height="130" width="60" as="geometry">
+            <mxRectangle height="130" width="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3WTZxi-UX_MEPKbKkTpc-19" parent="3WTZxi-UX_MEPKbKkTpc-17" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=0;overflow=hidden;whiteSpace=wrap;html=1;" value="&lt;div&gt;취소 버튼를 입력하면 메인 화면으로 이동&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="450" x="60" as="geometry">
+            <mxRectangle height="130" width="450" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3WTZxi-UX_MEPKbKkTpc-20" parent="3WTZxi-UX_MEPKbKkTpc-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" value="" vertex="1">
+          <mxGeometry height="230" width="510" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="3WTZxi-UX_MEPKbKkTpc-21" parent="3WTZxi-UX_MEPKbKkTpc-20" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="예외흐름" vertex="1">
+          <mxGeometry height="230" width="60" as="geometry">
+            <mxRectangle height="230" width="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3WTZxi-UX_MEPKbKkTpc-22" parent="3WTZxi-UX_MEPKbKkTpc-20" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=0;overflow=hidden;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;1a 동일한 계정이 있는경우&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;시스템은 &#39;동일한 계정이 있습니다&#39; 라는 메시지를 비회원에게 전달&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;1b 인증을 하지않고 회원가입을 하려는 경우&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;시스템은 &#39;인증이 되지 않았습니다&#39; 라는 메시지를 비회원에게 전달&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;1c 인증코드 입력 누락시&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&#39;인증처리를 위한 code를 입력하세요&#39; 메시지를 비회원에게 전달&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1d email형식에 맞지 않는 주소 입력&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&#39;올바른 이메일 형식을 입력하세요&#39; 라는 메시지를 비회원에게 전달&lt;/div&gt;" vertex="1">
+          <mxGeometry height="230" width="450" x="60" as="geometry">
+            <mxRectangle height="230" width="450" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="AWpYzEg89Pw0rak-iIPs" name="결제 시퀀스 다이어그램">
+    <mxGraphModel dx="1426" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aWKT4-C6D3yEXwVHbYwh-1" parent="1" style="shape=table;startSize=40;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;" value="&lt;div&gt;&amp;lt;&amp;lt;유스케이스 명세서&amp;gt;&amp;gt;&lt;/div&gt;유스케이스명 : 결제" vertex="1">
+          <mxGeometry height="690" width="510" x="10" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="aWKT4-C6D3yEXwVHbYwh-2" parent="aWKT4-C6D3yEXwVHbYwh-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;strokeColor=default;verticalAlign=middle;fontStyle=0" value="" vertex="1">
+          <mxGeometry height="30" width="510" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aWKT4-C6D3yEXwVHbYwh-3" parent="aWKT4-C6D3yEXwVHbYwh-2" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="목표" vertex="1">
+          <mxGeometry height="30" width="60" as="geometry">
+            <mxRectangle height="30" width="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWKT4-C6D3yEXwVHbYwh-4" parent="aWKT4-C6D3yEXwVHbYwh-2" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-weight: 400; text-wrap: nowrap;&quot;&gt;회원이 상품을 구매하기 위해 결제할 수 있도록 시스템을 통해 결제절차를 완료한다.&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="450" x="60" as="geometry">
+            <mxRectangle height="30" width="450" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWKT4-C6D3yEXwVHbYwh-5" parent="aWKT4-C6D3yEXwVHbYwh-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" value="" vertex="1">
+          <mxGeometry height="30" width="510" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="aWKT4-C6D3yEXwVHbYwh-6" parent="aWKT4-C6D3yEXwVHbYwh-5" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="엑터" vertex="1">
+          <mxGeometry height="30" width="60" as="geometry">
+            <mxRectangle height="30" width="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWKT4-C6D3yEXwVHbYwh-7" parent="aWKT4-C6D3yEXwVHbYwh-5" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=0;overflow=hidden;whiteSpace=wrap;html=1;" value="회원" vertex="1">
+          <mxGeometry height="30" width="450" x="60" as="geometry">
+            <mxRectangle height="30" width="450" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWKT4-C6D3yEXwVHbYwh-8" parent="aWKT4-C6D3yEXwVHbYwh-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" value="" vertex="1">
+          <mxGeometry height="30" width="510" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="aWKT4-C6D3yEXwVHbYwh-9" parent="aWKT4-C6D3yEXwVHbYwh-8" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="사전 조건" vertex="1">
+          <mxGeometry height="30" width="60" as="geometry">
+            <mxRectangle height="30" width="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWKT4-C6D3yEXwVHbYwh-10" parent="aWKT4-C6D3yEXwVHbYwh-8" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=0;overflow=hidden;whiteSpace=wrap;html=1;" value="상품페이지에서 구매하기 버튼을 클릭하여 결제페이지로 이동한다." vertex="1">
+          <mxGeometry height="30" width="450" x="60" as="geometry">
+            <mxRectangle height="30" width="450" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWKT4-C6D3yEXwVHbYwh-11" parent="aWKT4-C6D3yEXwVHbYwh-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" value="" vertex="1">
+          <mxGeometry height="30" width="510" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="aWKT4-C6D3yEXwVHbYwh-12" parent="aWKT4-C6D3yEXwVHbYwh-11" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="사후 처리" vertex="1">
+          <mxGeometry height="30" width="60" as="geometry">
+            <mxRectangle height="30" width="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWKT4-C6D3yEXwVHbYwh-13" parent="aWKT4-C6D3yEXwVHbYwh-11" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=0;overflow=hidden;whiteSpace=wrap;html=1;" value="결제 정상 처리 후 마이페이지로 이동한다." vertex="1">
+          <mxGeometry height="30" width="450" x="60" as="geometry">
+            <mxRectangle height="30" width="450" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWKT4-C6D3yEXwVHbYwh-14" parent="aWKT4-C6D3yEXwVHbYwh-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" value="" vertex="1">
+          <mxGeometry height="170" width="510" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="aWKT4-C6D3yEXwVHbYwh-15" parent="aWKT4-C6D3yEXwVHbYwh-14" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="기본흐름" vertex="1">
+          <mxGeometry height="170" width="60" as="geometry">
+            <mxRectangle height="170" width="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWKT4-C6D3yEXwVHbYwh-16" parent="aWKT4-C6D3yEXwVHbYwh-14" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=0;overflow=hidden;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;div&gt;1 회원이 상품페이지에서 구매하기 버튼을 클릭한다.&lt;/div&gt;&lt;div&gt;2 시스템은 결제 정보 입력 폼을 전달한다.&lt;/div&gt;&lt;div&gt;3 회원은 배송지를 입력한다.&lt;/div&gt;&lt;div&gt;4 회원은 결제 수단을 선택한다.&lt;/div&gt;&lt;div&gt;5 회원은 결제 포인트 여부를 선택한다.&lt;/div&gt;&lt;div&gt;6 시스템은 결제 정보를 결제대행사에 전달한다.&lt;br&gt;&lt;/div&gt;&lt;div&gt;7 결제대행사는 시스템에 결제 여부를 전달한다.&lt;/div&gt;&lt;div&gt;8 시스템은 결제 승인 확인 후 결제 완료 메시지를 전달한다.&lt;/div&gt;&lt;div&gt;9 회원은 메시지 결제 완료 버튼을 클릭한다.&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="450" x="60" as="geometry">
+            <mxRectangle height="170" width="450" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWKT4-C6D3yEXwVHbYwh-17" parent="aWKT4-C6D3yEXwVHbYwh-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" value="" vertex="1">
+          <mxGeometry height="130" width="510" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="aWKT4-C6D3yEXwVHbYwh-18" parent="aWKT4-C6D3yEXwVHbYwh-17" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="대안흐름" vertex="1">
+          <mxGeometry height="130" width="60" as="geometry">
+            <mxRectangle height="130" width="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWKT4-C6D3yEXwVHbYwh-19" parent="aWKT4-C6D3yEXwVHbYwh-17" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=0;overflow=hidden;whiteSpace=wrap;html=1;" value="&lt;div&gt;뒤로 가기 버튼를 입력하면 메인 페이지로 이동&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="450" x="60" as="geometry">
+            <mxRectangle height="130" width="450" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWKT4-C6D3yEXwVHbYwh-20" parent="aWKT4-C6D3yEXwVHbYwh-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" value="" vertex="1">
+          <mxGeometry height="230" width="510" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="aWKT4-C6D3yEXwVHbYwh-21" parent="aWKT4-C6D3yEXwVHbYwh-20" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" value="예외흐름" vertex="1">
+          <mxGeometry height="230" width="60" as="geometry">
+            <mxRectangle height="230" width="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWKT4-C6D3yEXwVHbYwh-22" parent="aWKT4-C6D3yEXwVHbYwh-20" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=0;overflow=hidden;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;1a 로그인을 하지 않고 구매를 하려는 경우&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;시스템은 &#39;로그인이 필요한 서비스입니다. 로그인 하시겠습니까?&#39;&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;라는 메시지를 비회원에게 전달&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;1b 상품페이지에서 옵션을 선택하지 않은 경우&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;시스템은 &#39;옵션을 선택하지 않았습니다. 옵션을 선택해주세요&#39;&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;라는 메시지를 회원에게 전달&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;1c 배송지입력 누락시&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&#39;배송지입력은 필수사항입니다. 배송지를 입력하세요&#39; 메시지를 회원에게 전달&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1d 결제 오류 시(ex, 잔액 부족으로 결제대행사에서 결제 오류(잔액부족)전달 시)&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&#39;잔액 부족으로 인해 결제가 실패했습니다&#39; 라는 메시지를 회원에게 전달&lt;/div&gt;" vertex="1">
+          <mxGeometry height="230" width="450" x="60" as="geometry">
+            <mxRectangle height="230" width="450" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="시퀀스 다이어그램" vertex="1">
+          <mxGeometry height="30" width="120" x="750" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-2" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;" value="" vertex="1">
+          <mxGeometry height="1390" width="20" x="850" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-3" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="[BN]결제처리&amp;nbsp;&lt;div&gt;서비스&lt;/div&gt;" vertex="1">
+          <mxGeometry height="1140" width="100" x="1536" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-4" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="정상흐름" vertex="1">
+          <mxGeometry height="200" width="300" x="2550" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-5" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;fillColor=#f8cecc;strokeColor=#b85450;width=165;height=18;" value="예외흐름: email 유효성 검증" vertex="1">
+          <mxGeometry height="68" width="495" x="865" y="342" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-6" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;fillColor=#fff2cc;strokeColor=#d6b656;" value="대안흐름" vertex="1">
+          <mxGeometry height="200" width="300" x="2550" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-7" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="정상흐름" vertex="1">
+          <mxGeometry height="1100" width="1630" x="750" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-8" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;dashed=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1310" y="453" />
+            </Array>
+            <mxPoint x="1240" y="453.0000000000001" as="sourcePoint" />
+            <mxPoint x="1581" y="453" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-9" connectable="0" parent="D_Sb81rDP2JQkHH4NsVu-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(236, 236, 236);&quot;&gt;[비동기]email 계정명 Submit&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0213" y="-1" as="geometry">
+            <mxPoint y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-10" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="230" width="10" x="1581" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-11" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="GOOGLE&lt;div&gt;MAIL API&lt;/div&gt;" vertex="1">
+          <mxGeometry height="1120" width="100" x="1796" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-12" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="DATABASE" vertex="1">
+          <mxGeometry height="1130" width="100" x="2056" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-13" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1591" y="602.6600000000001" as="sourcePoint" />
+            <mxPoint x="1846" y="602.6600000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-14" connectable="0" parent="D_Sb81rDP2JQkHH4NsVu-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(236, 236, 236);&quot;&gt;인증 코드 전송 요청&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0213" y="-1" as="geometry">
+            <mxPoint y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-15" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;endFill=1;entryX=1;entryY=1;entryDx=0;entryDy=-5;entryPerimeter=0;dashed=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1845.5" y="632.0000000000001" as="sourcePoint" />
+            <mxPoint x="1591" y="632.0000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-16" connectable="0" parent="D_Sb81rDP2JQkHH4NsVu-15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(236, 236, 236);&quot;&gt;요청 완료&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0213" y="-1" as="geometry">
+            <mxPoint y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-17" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;endFill=1;dashed=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1581" y="660" as="sourcePoint" />
+            <mxPoint x="1243" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-18" connectable="0" parent="D_Sb81rDP2JQkHH4NsVu-17" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px; background-color: rgb(236, 236, 236);&quot;&gt;이메일 전송 요청 결과(true)전달&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0213" y="-1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-19" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="940" y="743" />
+            </Array>
+            <mxPoint x="859.8333333333333" y="743" as="sourcePoint" />
+            <mxPoint x="1230" y="743" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-20" connectable="0" parent="D_Sb81rDP2JQkHH4NsVu-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(236, 236, 236);&quot;&gt;인증코드 확인폼에 입력 + 인증확인 버튼을 클릭&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0213" y="-1" as="geometry">
+            <mxPoint y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-21" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="61" width="10" x="1581" y="835" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-22" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="865" y="960" as="sourcePoint" />
+            <mxPoint x="1230" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-23" connectable="0" parent="D_Sb81rDP2JQkHH4NsVu-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(236, 236, 236);&quot;&gt;이름/연락처/주소/를 입력 +&amp;nbsp; 회원가입 버튼을 클릭&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0213" y="-1" as="geometry">
+            <mxPoint y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-24" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="80" width="10" x="1580" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-25" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1590" y="1131" as="sourcePoint" />
+            <mxPoint x="2104.5" y="1131" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-26" connectable="0" parent="D_Sb81rDP2JQkHH4NsVu-25" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px; background-color: rgb(236, 236, 236);&quot;&gt;회원정보 저장 요청&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0213" y="-1" as="geometry">
+            <mxPoint y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-27" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;endFill=1;dashed=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2104.5" y="1168" as="sourcePoint" />
+            <mxPoint x="1590" y="1168" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-28" connectable="0" parent="D_Sb81rDP2JQkHH4NsVu-27" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(236, 236, 236);&quot;&gt;저장 완료&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0213" y="-1" as="geometry">
+            <mxPoint y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-29" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;endFill=1;dashed=1;" target="D_Sb81rDP2JQkHH4NsVu-37" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1580" y="1180" as="sourcePoint" />
+            <mxPoint x="1204.6304347826087" y="1180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-30" connectable="0" parent="D_Sb81rDP2JQkHH4NsVu-29" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(236, 236, 236);&quot;&gt;회원가입 및 완료 전달(true)&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0213" y="-1" as="geometry">
+            <mxPoint y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="로그인 페이지로 이동" vertex="1">
+          <mxGeometry height="30" width="110.25" x="1246" y="1250" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-32" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font size=&quot;1&quot; style=&quot;color: rgb(255, 16, 40);&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;이메일 형식에 맞지 않음&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="10" width="109" x="1246" y="361" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-33" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="[FN]결제 폼" vertex="1">
+          <mxGeometry height="1390" width="100" x="1187" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-34" parent="D_Sb81rDP2JQkHH4NsVu-33" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="370" width="10" x="45" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-35" parent="D_Sb81rDP2JQkHH4NsVu-33" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="50" width="10" x="50" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-36" parent="D_Sb81rDP2JQkHH4NsVu-33" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="170" width="10" x="45" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-37" parent="D_Sb81rDP2JQkHH4NsVu-33" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="320" width="10" x="45" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-38" parent="D_Sb81rDP2JQkHH4NsVu-33" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="40" width="10" x="45" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-39" parent="D_Sb81rDP2JQkHH4NsVu-33" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="40" width="10" x="45" y="1310" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-40" edge="1" parent="1" source="D_Sb81rDP2JQkHH4NsVu-2" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=5;entryPerimeter=0;" target="D_Sb81rDP2JQkHH4NsVu-34" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="865" y="350" as="sourcePoint" />
+            <mxPoint x="1120" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-41" connectable="0" parent="D_Sb81rDP2JQkHH4NsVu-40" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-size: 9px; text-align: left; background-color: rgb(236, 236, 236);&quot;&gt;email 계정을 입력 + 인증 버튼을 클릭&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0213" y="-1" as="geometry">
+            <mxPoint y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-42" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;endFill=1;dashed=1;strokeColor=#FF0B23;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1205" y="390" />
+            </Array>
+            <mxPoint x="1237" y="390.0000000000001" as="sourcePoint" />
+            <mxPoint x="865" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-43" connectable="0" parent="D_Sb81rDP2JQkHH4NsVu-42" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: rgb(236, 236, 236);&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(255, 11, 27), rgb(255, 255, 255)); font-size: 10px;&quot;&gt;유효성 오류. MSG: 올바른 이메일 형식이 아닙니다&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0213" y="-1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-44" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;fillColor=#f8cecc;strokeColor=#b85450;width=165;height=18;" value="예외흐름: 동일 계정 유무" vertex="1">
+          <mxGeometry height="70" width="925" x="865" y="507" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-45" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1591" y="463" as="sourcePoint" />
+            <mxPoint x="2105.5" y="463" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-46" connectable="0" parent="D_Sb81rDP2JQkHH4NsVu-45" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(236, 236, 236);&quot;&gt;동일 계정 존재 여부 확인 요청&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0213" y="-1" as="geometry">
+            <mxPoint x="-13" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-47" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;endFill=1;dashed=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2105.5" y="489" as="sourcePoint" />
+            <mxPoint x="1591" y="489" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-48" connectable="0" parent="D_Sb81rDP2JQkHH4NsVu-47" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(236, 236, 236);&quot;&gt;동일 계정 존재 여부 결과 응답&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0213" y="-1" as="geometry">
+            <mxPoint x="-24" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-49" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;endFill=1;dashed=1;strokeColor=#FF0B23;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1549" y="550" />
+            </Array>
+            <mxPoint x="1581" y="550.0000000000001" as="sourcePoint" />
+            <mxPoint x="1240" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-50" connectable="0" parent="D_Sb81rDP2JQkHH4NsVu-49" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: rgb(236, 236, 236);&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(255, 11, 27), rgb(255, 255, 255));&quot;&gt;동일 계정 존재 결과 전달(true)&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0213" y="-1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-51" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;color: rgb(255, 19, 42);&quot;&gt;동일 계정 존재 확인&lt;/font&gt;" vertex="1">
+          <mxGeometry height="20" width="118" x="1592" y="518" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-52" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;endFill=1;dashed=1;strokeColor=#FF0B23;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1199" y="557.66" />
+            </Array>
+            <mxPoint x="1231" y="557.6600000000001" as="sourcePoint" />
+            <mxPoint x="859.9285714285713" y="557.6599999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-53" connectable="0" parent="D_Sb81rDP2JQkHH4NsVu-52" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: rgb(236, 236, 236);&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(255, 11, 27), rgb(255, 255, 255)); font-size: 12px;&quot;&gt;동일계정 존재 오류 . MSG : 동일한 계정이 존재합니다&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0213" y="-1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-54" edge="1" parent="1" source="D_Sb81rDP2JQkHH4NsVu-34" style="endArrow=classic;html=1;rounded=0;endFill=1;dashed=1;strokeColor=light-dark(#000000, #ff889d);" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1194.0714285714287" y="680.0000000000001" />
+            </Array>
+            <mxPoint x="1226.0714285714287" y="680.0000000000002" as="sourcePoint" />
+            <mxPoint x="860" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-55" connectable="0" parent="D_Sb81rDP2JQkHH4NsVu-54" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-size: 12px; background-color: rgb(236, 236, 236);&quot;&gt;MSG : 인증 코드가 이메일로 전송되었습니다. 인증코드폼 활성화&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0213" y="-1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-56" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;fillColor=#f8cecc;strokeColor=#b85450;width=165;height=18;" value="예외흐름: email 유효성 검증" vertex="1">
+          <mxGeometry height="68" width="715" x="865" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-57" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="50" width="10" x="1237" y="758" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-58" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font color=&quot;#ff1028&quot; size=&quot;1&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;인증코드 미입력&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="10" width="109" x="1230" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-59" edge="1" parent="1" source="D_Sb81rDP2JQkHH4NsVu-57" style="endArrow=classic;html=1;rounded=0;endFill=1;dashed=1;strokeColor=#FF0B23;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1198" y="790" />
+            </Array>
+            <mxPoint x="1230" y="790.0000000000001" as="sourcePoint" />
+            <mxPoint x="858" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-60" connectable="0" parent="D_Sb81rDP2JQkHH4NsVu-59" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: rgb(236, 236, 236);&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(255, 11, 27), rgb(255, 255, 255)); font-size: 10px;&quot;&gt;유효성 오류. MSG: 인증코드를 입력해주세요&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0213" y="-1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-61" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;dashed=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1316" y="848" />
+            </Array>
+            <mxPoint x="1246" y="848.0000000000001" as="sourcePoint" />
+            <mxPoint x="1580" y="848" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-62" connectable="0" parent="D_Sb81rDP2JQkHH4NsVu-61" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(236, 236, 236);&quot;&gt;[비동기] 인증코드 Submit&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0213" y="-1" as="geometry">
+            <mxPoint y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-63" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;endFill=1;dashed=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1581" y="873.5000000000002" as="sourcePoint" />
+            <mxPoint x="1241.9999999999998" y="873.5000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-64" connectable="0" parent="D_Sb81rDP2JQkHH4NsVu-63" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px; background-color: rgb(236, 236, 236);&quot;&gt;인증코드 확인완료(true)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0213" y="-1" as="geometry">
+            <mxPoint y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-65" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;endFill=1;dashed=1;strokeColor=light-dark(#000000, #ff889d);" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1199.0714285714287" y="890.0000000000001" />
+            </Array>
+            <mxPoint x="1230" y="890" as="sourcePoint" />
+            <mxPoint x="865" y="890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-66" connectable="0" parent="D_Sb81rDP2JQkHH4NsVu-65" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-size: 12px; background-color: rgb(236, 236, 236);&quot;&gt;MSG : 이메일 인증 완료되었습니다. 개인정보 입력폼 활성화&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0213" y="-1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-67" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;fillColor=#f8cecc;strokeColor=#b85450;width=170;height=20;" value="예외흐름: 개인정보 유효성 검증" vertex="1">
+          <mxGeometry height="120" width="720" x="860" y="970" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-68" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="101" width="10" x="1237" y="979" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-69" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font color=&quot;#ff1028&quot; size=&quot;1&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;이름 미입력&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="10" width="76" x="1235.25" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-70" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font color=&quot;#ff1028&quot; size=&quot;1&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;연락처 미입력&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="15" width="76" x="1240.25" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-71" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font color=&quot;#ff1028&quot; size=&quot;1&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;주소 미입력&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="10" width="70" x="1239.25" y="1006" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-72" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font color=&quot;#ff1028&quot; size=&quot;1&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;패스워드 복잡도 정책위반&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="10" width="76" x="1265.25" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-73" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font color=&quot;#ff1028&quot; size=&quot;1&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;패스워드, 재입력된 패스워드의 불일치&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="10" width="76" x="1289.75" y="1035" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-74" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;endFill=1;dashed=1;strokeColor=#FF0B23;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1200" y="1070" />
+            </Array>
+            <mxPoint x="1237" y="1070" as="sourcePoint" />
+            <mxPoint x="860" y="1070" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-75" connectable="0" parent="D_Sb81rDP2JQkHH4NsVu-74" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: rgb(236, 236, 236);&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(255, 11, 27), rgb(255, 255, 255)); font-size: 10px;&quot;&gt;유효성 오류. MSG: 각각 유효성 오류에 맞게 화살표, 메시지 처리&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0213" y="-1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-76" edge="1" parent="1" source="D_Sb81rDP2JQkHH4NsVu-37" style="endArrow=classic;html=1;rounded=0;" target="D_Sb81rDP2JQkHH4NsVu-24" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1310.25" y="1120" />
+            </Array>
+            <mxPoint x="1250" y="1120" as="sourcePoint" />
+            <mxPoint x="1574.25" y="1120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-77" connectable="0" parent="D_Sb81rDP2JQkHH4NsVu-76" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(236, 236, 236);&quot;&gt;회원정보 Submit&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0213" y="-1" as="geometry">
+            <mxPoint y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-78" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;endFill=1;dashed=1;strokeColor=light-dark(#000000, #ff889d);" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1199.0714285714287" y="1190" />
+            </Array>
+            <mxPoint x="1230" y="1190" as="sourcePoint" />
+            <mxPoint x="865" y="1190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-79" connectable="0" parent="D_Sb81rDP2JQkHH4NsVu-78" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-size: 12px; background-color: rgb(236, 236, 236);&quot;&gt;MSG : 회원가입이완료되었습니다.&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0213" y="-1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-80" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="858" y="1250" as="sourcePoint" />
+            <mxPoint x="1230" y="1249.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-81" connectable="0" parent="D_Sb81rDP2JQkHH4NsVu-80" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px; background-color: rgb(236, 236, 236);&quot;&gt;확인버튼 클릭&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0213" y="-1" as="geometry">
+            <mxPoint y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-82" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;fillColor=#fff2cc;strokeColor=#d6b656;" value="대안흐름" vertex="1">
+          <mxGeometry height="90" width="1630" x="750" y="1420" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-83" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;fillColor=#fff2cc;strokeColor=#d6b656;" value="대안흐름" vertex="1">
+          <mxGeometry height="90" width="1630" x="750" y="1530" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-84" edge="1" parent="1" source="D_Sb81rDP2JQkHH4NsVu-2" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=5;entryPerimeter=0;" target="D_Sb81rDP2JQkHH4NsVu-38" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="863.25" y="1450.0000000000002" as="sourcePoint" />
+            <mxPoint x="1235.25" y="1450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-85" connectable="0" parent="D_Sb81rDP2JQkHH4NsVu-84" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px; background-color: rgb(236, 236, 236);&quot;&gt;취소버튼 클릭&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0213" y="-1" as="geometry">
+            <mxPoint y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-86" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="로그인 페이지로 이동" vertex="1">
+          <mxGeometry height="30" width="110.25" x="1244.75" y="1460" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-87" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=5;entryPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="860" y="1560" as="sourcePoint" />
+            <mxPoint x="1232" y="1560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-88" connectable="0" parent="D_Sb81rDP2JQkHH4NsVu-87" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px; background-color: rgb(236, 236, 236);&quot;&gt;로그인 링크 클릭&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0213" y="-1" as="geometry">
+            <mxPoint y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D_Sb81rDP2JQkHH4NsVu-89" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="로그인 페이지로 이동" vertex="1">
+          <mxGeometry height="30" width="110.25" x="1244.75" y="1570" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
