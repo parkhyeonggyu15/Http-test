@@ -108,23 +108,22 @@
 			`);
 				customMaker.openPopup();
 			}
-
-
 		});
+
 
 		// 지도 우클릭 이벤트
 		map.on('contextmenu', function (e) {
 			// console.log(e.latlng);
 			const lat = e.latlng.lat;
-			const lng = e.latlng.lat;
-			console.log(e.latlng);
+			const lng = e.latlng.lng;
+			console.log(lat,lng);
 
-			//비동기 요청 처리함수 (fetch)
-			fetch(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&layer=address`)
-			.then((response)=>{ return response.json();}) //성공시
-			.then((data)=>{
-				console.log(data);
-				const displayName = data && data.display_name;
+			// 비동기 요청 처리함수 (fetch)
+			fetch(`https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${lat}&lon=${lng}&layer=address`)
+			.then((response)=> { return response.json();})	//성공시
+			.then((data)=> {
+				// console.log(data);
+				const displayName = data &&  data.display_name
 				const suberb = data && data.address.suberb;
 				const village = data && data.address.village;
 				console.log(displayName,suberb,village);
@@ -132,15 +131,24 @@
 				L
 					.popup()
 					.setLatLng(e.latlng)
-					.setContent(`<div style="width:220px;">
+					.setContent(`<div style='width:220px;'>
 						위도 : ${lat}<br/>
 						경도 : ${lng}<br/>
-						주소 : ${displayName}<br/>
-						<div>`)
+						주소 : 
+						<a 
+							href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=${displayName}'
+							target='_blank'
+						>
+							${displayName}
+						</a>
+						<br/>
+						
+						</div>`)
 					.openOn(map);
+				
 			
-			}) //실패시
-			.catch((error)=>{console.log(error);}) //실패시
+			})	//성공시
+			.catch((error)=>{console.log(error)}) 		//실패시
 		});
 
 
